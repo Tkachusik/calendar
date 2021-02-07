@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.table-bordered{
+  color: rgb(59, 58, 58);
+}
+
+.dropdown-toggle {
+  border-color: black;
+  }
+  
+  .position1{
+    position: relative;
+  }
+
+.distance {
+  margin-left: 20px;
+}
+.table-hover td:hover{
+  border: 2px solid gray;
+}
+
+.control-btn .filter-by, .control-btn a {
+  float: right;
+  margin: 10px;
+}
+
+.filter-by {
+  width: 150px;
+}
+
+.new-event {
+  padding-top: 100px;
+}

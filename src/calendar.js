@@ -54,7 +54,7 @@ const Calendar = ({ users, calendar, resetToDefault, isEventCreatedSuccessfuly, 
                                     const isDefined = calendar.get(time).get(day);
                                     if (isDefined === undefined) return undefined;
 
-                                    if (filterByMember != 'All members' && isDefined.users.includes(filterByMember) === false) {
+                                    if (filterByMember !== 'All members' && isDefined.users.includes(filterByMember) === false) {
                                         return undefined;
                                     }
                                     

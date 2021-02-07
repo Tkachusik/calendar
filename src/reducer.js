@@ -1,5 +1,3 @@
-import calendar from "./calendar";
-
 const initDaysMap = () => {
     let map = new Map([
         ["Mon", undefined],
@@ -61,11 +59,11 @@ const reducer = (state = initialState, action) => {
                 eventSelectedTime: action.selectedTime,
             }
         case "CREATE_EVENT": 
-            if (state.eventName == '' || state.eventSelectedUsers.length == 0) {
+            if (state.eventName === '' || state.eventSelectedUsers.length === 0) {
                 return state;
             }
 
-            if (state.calendar.get(state.eventSelectedTime).get(state.eventSelectedDay) != undefined) {
+            if (state.calendar.get(state.eventSelectedTime).get(state.eventSelectedDay) !== undefined) {
                 return {
                     ...state,
                     isEventTimeFree: false,
